@@ -1,20 +1,13 @@
 import React, {type ComponentProps, type HTMLAttributes} from 'react';
 
-import {MyElement} from '@components/Lit/MyElement/MyElement';
-
-interface MyElementProps extends MyElement {
-  [key: string]: string;
-}
-
 declare global {
   namespace JSX {
     interface IntrinsicElements {
       // These can be changed to more specific types for the element
-      ['lit-word-count']: HTMLAttributes<HTMLParagraphElement> &
-        IntrinsicAttributes;
-      ['my-element']: HTMLAttributes;
-      ['callback-display']: HTMLAttributes;
-      ['newsletter-widget']: HTMLAttributes;
+      ['lit-word-count']: HTMLAttributes & IntrinsicAttributes;
+      ['my-element']: HTMLAttributes & IntrinsicAttributes;
+      ['callback-display']: HTMLAttributes & IntrinsicAttributes;
+      ['newsletter-widget']: HTMLAttributes & IntrinsicAttributes;
       ['slot-example']: HTMLAttributes & IntrinsicAttributes;
     }
   }
