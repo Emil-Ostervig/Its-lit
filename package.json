@@ -1,0 +1,33 @@
+{
+  "name": "its-lit",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Emil Østervig",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "lit": "^3.2.1",
+    "postcss-nested": "^7.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router": "^6.27.0",
+    "react-router-dom": "^6.27.0",
+    "vite-tsconfig-paths": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.9",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.11.0",
+    "@typescript-eslint/parser": "^8.11.0",
+    "eslint": "^9.13.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  }
+}

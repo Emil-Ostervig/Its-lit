@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lit Playground</title>
+
+    <!-- Load all lit elements -->
+    <script type="module" src="/src/index.ts"></script>
+  </head>
+  <body>
+      
+    <!-- Word counter example -->
+    <div class="native-example native-layout">
+      <!-- Native word counter -->
+      <div class="borderBox" data-title="Native word counter">
+        <h2>Native Word Counter inside index.html</h2>
+        <p contenteditable>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla mollitia
+          cupiditate obcaecati vero aspernatur repellat non ratione sit.
+          Temporibus minima illum facere consequuntur, porro voluptatum ut
+          incidunt fugit deserunt voluptas.
+        </p>
+        <p is="word-count"></p>
+      </div>
+      
+      <!-- Lit word counter -->
+      <div class="borderBox" data-title="Lit word counter">
+        <h2>Lit Word Counter inside index.html</h2>
+        <p contenteditable>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla mollitia
+          cupiditate obcaecati vero aspernatur repellat non ratione sit.
+          Temporibus minima illum facere consequuntur, porro voluptatum ut
+          incidunt fugit deserunt voluptas.
+        </p>
+        <lit-word-count />
+      </div>
+    </div>
+
+
+  </body>
+</html>

@@ -1,0 +1,198 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**
+END OF MEYERWEB RESET
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2 {
+  font-family: 'Times New Roman', serif !important;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.3rem;
+}
+
+pre:has(code) {
+  display: inline-block;
+  background-color: #282a36;
+  color: white;
+  padding: 1em;
+  white-space: pre;
+}
+
+code {
+  font-family: 'Courier New', monospace;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  width: 100%;
+}
+
+.borderBox {
+  border: 2px dashed black;
+  width: auto;
+  max-width: 800px;
+  margin: 1em 0;
+  padding: 1em;
+  position: relative;
+  display: inline-block;
+  &::after {
+    content: attr(data-title);
+    position: absolute;
+    top: 0;
+    left: 1em;
+    background: white;
+    padding: 0px 10px;
+    transform: translate(-10px, -50%);
+    line-height: 1em;
+  }
+}
+
+.native-layout {
+  width: 1200px;
+  max-width: 100%;
+  margin: auto;
+  padding: 0 20px;
+}
