@@ -9,19 +9,20 @@ export const LitInReactPage = (props: Props) => {
   const [text, setText] = useState(defaultText);
   return (
     <div>
-      <h1>Hello, this is a page about using lit in react</h1>
+      <h1>Hello, this is a page about using LIT elements in react</h1>
 
       <p>
-        This page shows an example of using a webcomponet vs a lit element in a
+        This page shows an example of using a webcomponent vs a LIT element in a
         React component.
       </p>
       <p>
-        Lit is able to render in a React componet but will not render if content
-        changes.
+        Lit is able to render in a React component but will not always re-render
+        if content changes.
       </p>
       <p>
         As a workaround a key can be added to the Lit element to force a
-        re-render, but this is probably not a good approach.
+        re-render, but this is probably not a good approach. A better approach
+        would be to supply content via properties, which are reactive.
       </p>
       <p>
         Web components by default does not have reactivity, so they will just
