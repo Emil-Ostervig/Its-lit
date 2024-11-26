@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import styles from './NewsletterWidgetPage.module.css';
+import {CodeSnippet} from '@components/CodeSnippet/CodeSnippet';
 type NewsletterWidgetPageProps = {};
 
 type Settings = {
@@ -46,9 +47,7 @@ export const NewsletterWidgetPage = (props: NewsletterWidgetPageProps) => {
 
   return (
     <div>
-      <h1>
-        Hello this is a page. Here are some examples of newsletter widgets
-      </h1>
+      <h1>Here are some examples of newsletter widgets</h1>
 
       <div className={styles.inputGrid}>
         {textSettings.map((setting) => (
@@ -81,6 +80,45 @@ export const NewsletterWidgetPage = (props: NewsletterWidgetPageProps) => {
           </div>
         ))}
       </div>
+      <br />
+      <br />
+      <h3>Here is how the state and properties are defined:</h3>
+      <CodeSnippet language="typescript">
+        {`
+@state()
+inputValue = '';
+
+@state()
+isLoading = false;
+
+@state()
+isSuccessful = false;
+
+@state()
+isError = false;
+
+@property({type: String, attribute: 'brand-color', reflect: false})
+color: string | null = '#edbd76';
+
+@property({type: String, attribute: 'mode', reflect: false})
+mode: string | null = 'light';
+
+@property({type: String, attribute: 'headline', reflect: false})
+headline: string | null = 'Sign up';
+
+@property({type: String, attribute: 'description', reflect: false})
+description: string | null = 'And enjoy the benefits';
+
+@property({type: String, attribute: 'position', reflect: false})
+position: string | null = 'bottom';
+
+@property({type: String, attribute: 'side', reflect: false})
+side: string | null = 'right';
+
+@property({type: String, attribute: 'endpoint', reflect: false})
+endpoint: string | null = 'https://dummyjson.com';
+        `}
+      </CodeSnippet>
 
       <newsletter-widget {...params} />
     </div>
