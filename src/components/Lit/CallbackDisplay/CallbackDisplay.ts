@@ -27,15 +27,16 @@ export class CallbackDisplay extends LitElement {
     console.log(name);
   };
 
-  @state()
-  deepState = {
-    someProperty: 1,
-  };
   @state({})
   someState = 1;
 
   @property({type: Number, attribute: 'some-property', reflect: true})
   someProperty: number | null = 1;
+
+  @state()
+  deepState = {
+    someProperty: 1,
+  };
 
   render() {
     return html`
@@ -55,7 +56,7 @@ export class CallbackDisplay extends LitElement {
           </button>
         </div>
         <div>
-          Bump property of deepState to "new-property":
+          Bump property of deepState object: ${this.deepState.someProperty}
           <button
             @click=${() =>
               (this.deepState.someProperty = this.deepState.someProperty + 1)}

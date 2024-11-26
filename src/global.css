@@ -152,12 +152,23 @@ h3 {
   font-size: 1.3rem;
 }
 
+p {
+  margin-bottom: 0.5em;
+}
+
+h4,
+h5 {
+  margin-bottom: 1em;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 0.5em;
+}
+
 pre:has(code) {
   display: inline-block;
-  background-color: #282a36;
-  color: white;
-  padding: 1em;
-  white-space: pre;
 }
 
 code {

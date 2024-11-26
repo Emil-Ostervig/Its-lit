@@ -29,12 +29,12 @@ export const NewsletterWidgetPage = (props: NewsletterWidgetPageProps) => {
       values: ['top', 'bottom'],
     },
     {
-      name: 'mode',
-      values: ['light', 'dark'],
-    },
-    {
       name: 'side',
       values: ['left', 'right'],
+    },
+    {
+      name: 'mode',
+      values: ['light', 'dark'],
     },
     {
       name: 'brand-color',

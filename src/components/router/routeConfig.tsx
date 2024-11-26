@@ -42,18 +42,18 @@ export const routeConfig: RouteObject[] = [
     ),
   },
   {
-    path: '/newsletter-widget',
-    element: (
-      <Layout>
-        <NewsletterWidgetPage />
-      </Layout>
-    ),
-  },
-  {
     path: '/slots',
     element: (
       <Layout>
         <SlotExamplePage />
+      </Layout>
+    ),
+  },
+  {
+    path: '/newsletter-widget',
+    element: (
+      <Layout>
+        <NewsletterWidgetPage />
       </Layout>
     ),
   },

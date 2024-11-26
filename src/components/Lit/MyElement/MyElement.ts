@@ -43,16 +43,13 @@ export class MyElement extends LitElement {
       }
 
       h1,
-      h2,
       h3 {
         color: var(--prop-color, black);
+        font-family: inherit;
       }
 
       h2 {
         font-family: system-ui;
-      }
-      h3 {
-        font-family: inherit;
       }
     `;
   }
@@ -60,10 +57,14 @@ export class MyElement extends LitElement {
   render() {
     return html`
       <div style="--prop-color: ${this.color}">
+        <p>Changing reactive properties aren't reflected on the properties:</p>
         <h1>&lt;h1&gt; Hello, ${this.names?.[this.nameIndex]}</h1>
         <button @click="${this._shuffleName}">Change Name</button>
 
-        <h2>&lt;h2&gt; I'm using system UI font</h2>
+        <p>Style inheritance in shadow root:</p>
+        <h2>
+          &lt;h2&gt; I'm using system UI font. I also don't care about color.
+        </h2>
         <h3>&lt;h3&gt; I can also inherit font from parent if I want to</h3>
 
         <button @click="${() => (this.color = 'blue')}">

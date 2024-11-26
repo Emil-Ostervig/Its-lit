@@ -23,10 +23,10 @@ export const Layout = ({children}: LayoutProps) => {
               <NavLink to="/lifecycle">Lit Lifecycles</NavLink>
             </li>
             <li>
-              <NavLink to="/newsletter-widget">Newsletter widget</NavLink>
+              <NavLink to="/slots">Slot examples</NavLink>
             </li>
             <li>
-              <NavLink to="/slots">Slot examples</NavLink>
+              <NavLink to="/newsletter-widget">Newsletter widget</NavLink>
             </li>
           </ul>
         </nav>

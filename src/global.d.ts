@@ -1,6 +1,6 @@
 import React, {type ComponentProps, type HTMLAttributes} from 'react';
 
-import {MyElement} from '@components/MyElement/MyElement';
+import {MyElement} from '@components/Lit/MyElement/MyElement';
 
 interface MyElementProps extends MyElement {
   [key: string]: string;
