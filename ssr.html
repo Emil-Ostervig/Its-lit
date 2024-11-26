@@ -10,10 +10,15 @@
     <script type="module" src="/src/index.ts"></script>
   </head>
   <body>
-      
-
-    <div id="root"></div>
     
-    <script type="module" src="/src/react-app.tsx"></script>
+
+    <slot-example>
+      <h3 slot="headline">This is a header</h3>
+      <div slot="content">
+        <p>This is the content.</p>
+        <p>Lorem ipsum and stuff.</p>
+      </div>
+    </slot-example>
+
   </body>
 </html>

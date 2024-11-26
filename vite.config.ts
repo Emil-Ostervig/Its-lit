@@ -13,16 +13,9 @@ export default defineConfig({
       input: [
         path.resolve(__dirname, './index.html'),
         path.resolve(__dirname, './native.html'),
+        path.resolve(__dirname, './ssr.html'),
       ],
     },
     outDir: 'dist',
-    /* lib: {
-      entry: './index.html',
-      name: 'litComponents',
-      fileName(format, _entryName) {
-        return `litComponents.${format}.js`;
-      },
-      formats: ['umd', 'es'],
-    }, */
   },
 });
