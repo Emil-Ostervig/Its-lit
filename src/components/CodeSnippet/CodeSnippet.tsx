@@ -11,10 +11,13 @@ type CodeSnippetProps = React.PropsWithChildren<{
   language: 'javascript' | 'typescript' | 'html' | 'css';
 }>;
 export const CodeSnippet = ({children, language}: CodeSnippetProps) => {
-  const codeRef = useRef(null);
+  const codeRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     if (codeRef.current) {
+      if (codeRef.current.classList.contains('hljs')) {
+        return;
+      }
       hljs.highlightBlock(codeRef.current);
     }
   }, []);

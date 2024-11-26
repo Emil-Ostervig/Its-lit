@@ -10,11 +10,12 @@ declare global {
   namespace JSX {
     interface IntrinsicElements {
       // These can be changed to more specific types for the element
-      ['lit-word-count']: HTMLAttributes<HTMLParagraphElement>;
+      ['lit-word-count']: HTMLAttributes<HTMLParagraphElement> &
+        IntrinsicAttributes;
       ['my-element']: HTMLAttributes;
       ['callback-display']: HTMLAttributes;
       ['newsletter-widget']: HTMLAttributes;
-      ['slot-example']: HTMLAttributes;
+      ['slot-example']: HTMLAttributes & IntrinsicAttributes;
     }
   }
 }

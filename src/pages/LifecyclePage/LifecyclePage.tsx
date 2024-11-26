@@ -9,9 +9,19 @@ export const LifecyclePage = (props: Props) => {
       <h1>Lifecycles and events in LIT</h1>
       <p>Try interacting with the buttons to see how the state changes.</p>
       <p>Updating shallow state will trigger an immediate re-render.</p>
+
       <p>
         Updating deep state will require calling a <i>requestUpdate</i> method
         to trigger a re-render.
+      </p>
+      <p>
+        Learn more{' '}
+        <a
+          href="https://lit.dev/docs/components/lifecycle/#content"
+          target="_blank"
+        >
+          here
+        </a>
       </p>
       <br />
       <div className="clear"></div>
